@@ -1,0 +1,27 @@
+body {
+    background-color: #efefef;
+    text-align: center;
+}
+
+h1 {
+    color: #40686a;
+}
+
+p {
+    color:#2f1812;
+}
+
+a {
+    color: #915c4c;
+}
+
+a:hover {
+    color: #b78338;
+}
+
+/*
+#b78338 - link hover
+#915c4c - links
+#40686a - headings
+#2f1812 - text, borders
+*/
