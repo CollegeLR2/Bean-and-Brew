@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-color: #efefef;
+    text-align: center;
+}
+
+h1 {
+    @apply text-cyan-900;
+}
+
+p {
+    @apply text-gray-900;
+}
+
+a {
+    @apply text-yellow-900;
+}
+
+a:hover {
+    @apply text-amber-700;
+}
+
+/*
+amber-700 - link hover
+yellow-900 - links
+cyan-900 - headings
+#2f1812 - text, borders
+*/

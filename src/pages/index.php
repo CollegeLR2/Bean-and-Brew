@@ -9,6 +9,6 @@ require($_SERVER['DOCUMENT_ROOT'] . "/bean-and-brew/src/components/header.php" )
     <h1 class="text-3xl font-bold underline">Welcome to Bean and Brew</h1>
     <p>One of the first companies in the UK to use fair-trade
         coffee and all organic milk in our products</p>
-    <a class="like-link" href="#">Click here for more</a>
+    <a href="#">Click here for more</a>
 </body>
 </html>
