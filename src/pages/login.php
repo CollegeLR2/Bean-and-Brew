@@ -16,13 +16,13 @@ require($_SERVER['DOCUMENT_ROOT'] . "/bean-and-brew/src/components/header.php" )
         <label class="form-label" for="email">
             Email
         </label>
-        <input class="form-input" id="email" type="text" placeholder="name@beanandbrew.com">
+        <input class="form-input" id="email" type="email" placeholder="name@beanandbrew.com" required>
         </div>
         <div class="mb-6">
         <label class="form-label" for="password">
             Password
         </label>
-        <input class="form-input" id="password" type="password" placeholder="******************">
+        <input class="form-input" id="password" type="password" placeholder="******************" required>
         <!-- <p class="text-red-500 text-xs italic">Please choose a password.</p> -->
         </div>
         <div class="flex items-center justify-between">
@@ -30,7 +30,7 @@ require($_SERVER['DOCUMENT_ROOT'] . "/bean-and-brew/src/components/header.php" )
             Log In
         </button>
         <!-- allows the user to go to a new page to create an account -->
-        <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="signup.php">
+        <a class="inline-block align-baseline font-bold text-sm text-cyan-900 hover:text-cyan-950" href="signup.php">
             Sign Up
         </a>
         </div>
