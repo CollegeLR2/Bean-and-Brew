@@ -5,5 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- The ../ in the href goes to the parent directory to 
          look for the file (bean-and-brew folder) -->
-    <link rel="stylesheet" href="../css/styles.css">
+    <!-- <link rel="stylesheet" href="../css/styles.css"> -->
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="../input.css">
 </head>

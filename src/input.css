@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #efefef;
+    text-align: center;
+}
+
+h1 {
+    @apply text-cyan-900;
+}
+
+p {
+    @apply text-gray-900;
+}
+
+a {
+    @apply text-yellow-900;
+}
+
+a:hover {
+    @apply text-amber-700;
+}
+
+/* used for the titles on each page */
+.heading {
+    @apply text-3xl; 
+    @apply font-bold;
+    @apply underline;
+}
+
+.navbar-link {
+    @apply block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent;
+}
+
+/* hero images (home page) */
+.hero {
+    @apply object-cover w-full h-96 rounded-xl lg:w-4/6;
+}
+
+.form-label {
+    @apply block text-gray-700 text-sm font-bold mb-2;
+}
+
+.form-input {
+    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none;
+}
+
+.submit-button {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none;
+}
+
+/*
+amber-700 - link hover
+yellow-900 - links
+cyan-900 - headings
+#2f1812 - text, borders
+*/
