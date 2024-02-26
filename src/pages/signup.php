@@ -27,6 +27,8 @@ require($_SERVER['DOCUMENT_ROOT'] . "/bean-and-brew/src/components/header.php" )
         <button class="submit-button" type="submit">
             Sign Up
         </button>
+        <!-- takes the user back to the login page if they want to sign in 
+             to an account that already exists -->
         <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="login.php">
             Log In
         </a>

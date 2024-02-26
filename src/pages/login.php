@@ -1,3 +1,5 @@
+<!-- first page shown to users for ease of use
+     (sign up page can be reached only through here) -->
 <?php
 
 require($_SERVER['DOCUMENT_ROOT'] . "/bean-and-brew/src/components/header.php" )
@@ -27,6 +29,7 @@ require($_SERVER['DOCUMENT_ROOT'] . "/bean-and-brew/src/components/header.php" )
         <button class="submit-button" type="submit">
             Log In
         </button>
+        <!-- allows the user to go to a new page to create an account -->
         <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="signup.php">
             Sign Up
         </a>
