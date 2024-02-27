@@ -966,11 +966,6 @@ cyan-900 - headings
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.hover\:text-cyan-900:hover {
-  --tw-text-opacity: 1;
-  color: rgb(22 78 99 / var(--tw-text-opacity));
-}
-
 .hover\:text-cyan-950:hover {
   --tw-text-opacity: 1;
   color: rgb(8 51 68 / var(--tw-text-opacity));

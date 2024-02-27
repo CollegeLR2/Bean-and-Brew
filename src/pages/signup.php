@@ -11,6 +11,12 @@ require($_SERVER['DOCUMENT_ROOT'] . "/bean-and-brew/src/components/header.php" )
     <div class="w-full max-w-xs mx-auto pt-3">
     <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="../includes/signup.inc.php" method="post">
         <div class="mb-4">
+        <label class="form-label" for="name">
+            Name
+        </label>
+        <input class="form-input" id="name" type="text" placeholder="Your Name" required>
+        </div>
+        <div class="mb-4">
         <label class="form-label" for="email">
             Email
         </label>
