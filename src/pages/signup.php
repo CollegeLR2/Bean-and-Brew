@@ -14,19 +14,19 @@ require($_SERVER['DOCUMENT_ROOT'] . "/bean-and-brew/src/components/header.php" )
         <label class="form-label" for="name">
             Name
         </label>
-        <input class="form-input" id="name" type="text" placeholder="Your Name" required>
+        <input class="form-input" name="name" id="name" type="text" placeholder="Your Name" required>
         </div>
         <div class="mb-4">
         <label class="form-label" for="email">
             Email
         </label>
-        <input class="form-input" id="email" type="email" placeholder="name@beanandbrew.com" required>
+        <input class="form-input" name="email" id="email" type="email" placeholder="name@beanandbrew.com" required>
         </div>
         <div class="mb-6">
         <label class="form-label" for="password">
             Password
         </label>
-        <input class="form-input" id="password" type="password" placeholder="******************" required>
+        <input class="form-input" name="password" id="password" type="password" placeholder="******************" required>
         <!-- <p class="text-red-500 text-xs italic">Please choose a password.</p> -->
         </div>
         <div class="flex items-center justify-between">
