@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 require($_SERVER['DOCUMENT_ROOT'] . "/bean-and-brew/src/components/header.php" )
 
 ?>
@@ -14,7 +16,8 @@ require($_SERVER['DOCUMENT_ROOT'] . "/bean-and-brew/src/components/header.php" )
         <div class="py-4">
             <p>One of the first companies in the UK to use fair-trade
                 coffee and all organic milk in our products</p>
-            <a href="#">Click here for more</a>
+            <!-- temporary link -->
+            <a href="../includes/logout.inc.php">Click here to log out (temporary link)</a>
         </div>
 
         <!-- hero image -->

@@ -20,10 +20,46 @@ class User extends databaseHandler {
         }
     }
 
+    function getUser ($email) {
+        $conn = $this->connect();
+        $sql = "SELECT user_id, name, email FROM users WHERE email = ?";
+        $stmt = $conn->prepare($sql);
+
+        $stmt->bind_param("s", $email);
+
+        if (!$stmt->execute()) {
+            $stmt->close();
+            echo("Error finding your user. Try again");
+            die();
+        }
+
+        // gets the data from the database
+        $result = $stmt->get_result();
+        // $numRows = $result->num_rows;
+
+        $row = $result->fetch_assoc();
+        $stmt->close();
+
+        // what is given back when calling the getUser 
+        // function, an array
+        return $row;
+    }
+
     function logIn($email, $password) {
         // checks the password is correct
         if ($this->checkPassword($email, $password)) {
-            echo "password correct";
+            // gets the user information from db
+            $row = $this->getUser($email);
+            session_start();
+            // resets the session so I can have my own values
+            session_regenerate_id();
+            $_SESSION["user"] = [
+                "user_id" => $row["user_id"],
+                "name" => $row["name"],
+                "email" => $row["user_email"],
+            ];
+
+            header("Location: ../pages/index.php");
         } else {
             echo "incorrect password";
         }
